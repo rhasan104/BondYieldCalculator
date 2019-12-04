@@ -48,8 +48,8 @@ public class YieldCalculator extends Calculator {
     }
 
     private double CalcYield(double coupon, int years, double face, double price) {
-        double yield = 0;
-        int MAX_ITERATION = 200;
+        
+        int MAX_ITERATION = 500;
         double tolerance = 1e-7;
         double rate_l = Integer.MIN_VALUE;
         double rate_u = Integer.MAX_VALUE;
